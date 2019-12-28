@@ -1,0 +1,17 @@
+Cerberus==1.2
+Click==7.0
+Eve==0.9
+Events==0.3
+Flask==1.0.2
+Flask-Script==2.0.6
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+PyJWT==1.5.3
+pymongo==3.8.0
+python-dotenv==0.10.1
+redis==3.2.1
+simplejson==3.16.0
+Werkzeug==0.15.2
+Flask-Cors==3.0.7
+requests==2.22.0

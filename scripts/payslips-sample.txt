@@ -1,0 +1,26 @@
+---
+The following line:
+00000000147874920733G201812310017630001000000176319000003349700141040
+
+---
+Must be splitted in this way:
+
+_id: 000000001478
+vat: 74920733G
+date: 20181231
+gross: 00176300
+national_insurance_rate: 0100
+national_insurance_deduction: 00001763
+tax_rate: 1900
+tax_deduction: 00033497
+net: 00141040
+
+---
+And the number, must be formatted like this:
+
+gross: 1763.00
+national_insurance_rate: 1.00
+national_insurance_deduction: 17.63
+tax_rate: 19.00
+tax_deduction: 334.97
+net: 1410.40

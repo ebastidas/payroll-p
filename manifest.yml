@@ -1,0 +1,10 @@
+---
+applications:
+  - name: pers-payr
+    routes:
+      - route: pers-payr.eu-de.cf.appdomain.cloud
+    path: .
+    # services:
+    #   - mongodb # Uncomment when using MongoDB in the same account-org-space, need to bind the local service
+    env:
+      ENV_VAR1: ENV_VAR1_VALUE

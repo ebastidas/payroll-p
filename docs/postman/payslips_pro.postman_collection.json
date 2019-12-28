@@ -1,0 +1,885 @@
+{
+	"info": {
+		"_postman_id": "57e809ef-ecfa-4316-91c4-412108e2335a",
+		"name": "payslips_pro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TASK 1",
+			"item": [
+				{
+					"name": "/api/v1/payslips?year=YYYY&month=MM (TASK 1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/v1/payslips?year=2018&month=12",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payslips"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2018"
+								},
+								{
+									"key": "month",
+									"value": "12"
+								}
+							]
+						},
+						"description": "Task 1: Get all payslips from a specific year and month"
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/payslips?year=2018&month=12",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"payslips"
+									],
+									"query": [
+										{
+											"key": "year",
+											"value": "2018"
+										},
+										{
+											"key": "month",
+											"value": "12"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4493"
+								},
+								{
+									"key": "X-Total-Count",
+									"value": "10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=1,must-revalidate"
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Fri, 27 Dec 2019 21:12:30 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Server",
+									"value": "Eve/0.9 Werkzeug/0.15.2 Python/3.7.4"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Dec 2019 21:12:33 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_items\": [\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff0\",\n            \"external_id\": \"000000000001\",\n            \"vat\": \"97084172E\",\n            \"date\": \"20181231\",\n            \"gross\": 2486,\n            \"national_insurance_rate\": 5,\n            \"national_insurance_deduction\": 124.3,\n            \"tax_rate\": 12,\n            \"tax_deduction\": 298.32,\n            \"net\": 2063.37,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"79237e53792749e06937fccb7c71c3c27757f729\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000001\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff1\",\n            \"external_id\": \"000000000397\",\n            \"vat\": \"45201136H\",\n            \"date\": \"20181231\",\n            \"gross\": 2528,\n            \"national_insurance_rate\": 5,\n            \"national_insurance_deduction\": 126.4,\n            \"tax_rate\": 10,\n            \"tax_deduction\": 252.8,\n            \"net\": 2148.79,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"2ef7b0aaefcba0c7f44515caf6be5081372c3788\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000397\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff2\",\n            \"external_id\": \"000000000523\",\n            \"vat\": \"96433625F\",\n            \"date\": \"20181231\",\n            \"gross\": 2217,\n            \"national_insurance_rate\": 4,\n            \"national_insurance_deduction\": 88.68,\n            \"tax_rate\": 16,\n            \"tax_deduction\": 354.72,\n            \"net\": 1773.6,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"5bd723e86d91be08bc1bd21cccb013dd5f36b405\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000523\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff3\",\n            \"external_id\": \"000000002523\",\n            \"vat\": \"58914324P\",\n            \"date\": \"20181231\",\n            \"gross\": 1506,\n            \"national_insurance_rate\": 4,\n            \"national_insurance_deduction\": 60.24,\n            \"tax_rate\": 11,\n            \"tax_deduction\": 165.66,\n            \"net\": 1280.1,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"58d9a6d8ed67f3589058d5566f915707d7e1fc1f\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000002523\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff4\",\n            \"external_id\": \"000000000209\",\n            \"vat\": \"24093908M\",\n            \"date\": \"20181231\",\n            \"gross\": 1402,\n            \"national_insurance_rate\": 1,\n            \"national_insurance_deduction\": 14.02,\n            \"tax_rate\": 13,\n            \"tax_deduction\": 182.26,\n            \"net\": 1205.72,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"c6e2bdd6cd2490db2e0c558f8073b973be17c32a\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000209\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff5\",\n            \"external_id\": \"000000000315\",\n            \"vat\": \"19633248B\",\n            \"date\": \"20181231\",\n            \"gross\": 1057,\n            \"national_insurance_rate\": 1,\n            \"national_insurance_deduction\": 10.57,\n            \"tax_rate\": 12,\n            \"tax_deduction\": 126.84,\n            \"net\": 919.59,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"d715eba8edb10749ae6d2e97ec08cd500c601c5a\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000315\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff6\",\n            \"external_id\": \"000000000427\",\n            \"vat\": \"60016472L\",\n            \"date\": \"20181231\",\n            \"gross\": 2613,\n            \"national_insurance_rate\": 5,\n            \"national_insurance_deduction\": 130.65,\n            \"tax_rate\": 13,\n            \"tax_deduction\": 339.69,\n            \"net\": 2142.66,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"ec0b3dbe67361134dc1a42294511d90676aa7c63\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000427\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff7\",\n            \"external_id\": \"000000000428\",\n            \"vat\": \"92428750F\",\n            \"date\": \"20181231\",\n            \"gross\": 1930,\n            \"national_insurance_rate\": 1,\n            \"national_insurance_deduction\": 19.3,\n            \"tax_rate\": 16,\n            \"tax_deduction\": 308.8,\n            \"net\": 1601.9,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"415601c0b16b24b3c367b73f1edd94e37f6240aa\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000428\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff8\",\n            \"external_id\": \"000000001468\",\n            \"vat\": \"23749703H\",\n            \"date\": \"20181231\",\n            \"gross\": 1863,\n            \"national_insurance_rate\": 3,\n            \"national_insurance_deduction\": 55.89,\n            \"tax_rate\": 19,\n            \"tax_deduction\": 353.97,\n            \"net\": 1453.14,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"5c16a5843eead10c3ce6dd15929594ad266ea995\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000001468\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff9\",\n            \"external_id\": \"000000001478\",\n            \"vat\": \"74920733G\",\n            \"date\": \"20181231\",\n            \"gross\": 1763,\n            \"national_insurance_rate\": 1,\n            \"national_insurance_deduction\": 17.63,\n            \"tax_rate\": 19,\n            \"tax_deduction\": 334.97,\n            \"net\": 1410.4,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"511a9a2f55bac368febdf67d337b17788980fc99\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000001478\"\n                }\n            }\n        }\n    ],\n    \"_links\": {\n        \"parent\": {\n            \"title\": \"home\",\n            \"href\": \"/\"\n        },\n        \"self\": {\n            \"title\": \"payslips\",\n            \"href\": \"payslips?year=2018&month=12\"\n        }\n    },\n    \"_meta\": {\n        \"page\": 1,\n        \"max_results\": 25,\n        \"total\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/payslips",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/v1/payslips/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payslips",
+								""
+							]
+						},
+						"description": "Get all payslips"
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/payslips/",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"payslips",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4474"
+								},
+								{
+									"key": "X-Total-Count",
+									"value": "10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=1,must-revalidate"
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Fri, 27 Dec 2019 21:18:26 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Server",
+									"value": "Eve/0.9 Werkzeug/0.15.2 Python/3.7.4"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Dec 2019 21:21:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_items\": [\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff0\",\n            \"external_id\": \"000000000001\",\n            \"vat\": \"97084172E\",\n            \"date\": \"20181231\",\n            \"gross\": 2486,\n            \"national_insurance_rate\": 5,\n            \"national_insurance_deduction\": 124.3,\n            \"tax_rate\": 12,\n            \"tax_deduction\": 298.32,\n            \"net\": 2063.37,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"79237e53792749e06937fccb7c71c3c27757f729\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000001\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff1\",\n            \"external_id\": \"000000000397\",\n            \"vat\": \"45201136H\",\n            \"date\": \"20181231\",\n            \"gross\": 2528,\n            \"national_insurance_rate\": 5,\n            \"national_insurance_deduction\": 126.4,\n            \"tax_rate\": 10,\n            \"tax_deduction\": 252.8,\n            \"net\": 2148.79,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"2ef7b0aaefcba0c7f44515caf6be5081372c3788\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000397\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff2\",\n            \"external_id\": \"000000000523\",\n            \"vat\": \"96433625F\",\n            \"date\": \"20181231\",\n            \"gross\": 2217,\n            \"national_insurance_rate\": 4,\n            \"national_insurance_deduction\": 88.68,\n            \"tax_rate\": 16,\n            \"tax_deduction\": 354.72,\n            \"net\": 1773.6,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"5bd723e86d91be08bc1bd21cccb013dd5f36b405\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000523\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff3\",\n            \"external_id\": \"000000002523\",\n            \"vat\": \"58914324P\",\n            \"date\": \"20181231\",\n            \"gross\": 1506,\n            \"national_insurance_rate\": 4,\n            \"national_insurance_deduction\": 60.24,\n            \"tax_rate\": 11,\n            \"tax_deduction\": 165.66,\n            \"net\": 1280.1,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"58d9a6d8ed67f3589058d5566f915707d7e1fc1f\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000002523\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff4\",\n            \"external_id\": \"000000000209\",\n            \"vat\": \"24093908M\",\n            \"date\": \"20181231\",\n            \"gross\": 1402,\n            \"national_insurance_rate\": 1,\n            \"national_insurance_deduction\": 14.02,\n            \"tax_rate\": 13,\n            \"tax_deduction\": 182.26,\n            \"net\": 1205.72,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"c6e2bdd6cd2490db2e0c558f8073b973be17c32a\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000209\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff5\",\n            \"external_id\": \"000000000315\",\n            \"vat\": \"19633248B\",\n            \"date\": \"20181231\",\n            \"gross\": 1057,\n            \"national_insurance_rate\": 1,\n            \"national_insurance_deduction\": 10.57,\n            \"tax_rate\": 12,\n            \"tax_deduction\": 126.84,\n            \"net\": 919.59,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"d715eba8edb10749ae6d2e97ec08cd500c601c5a\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000315\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff6\",\n            \"external_id\": \"000000000427\",\n            \"vat\": \"60016472L\",\n            \"date\": \"20181231\",\n            \"gross\": 2613,\n            \"national_insurance_rate\": 5,\n            \"national_insurance_deduction\": 130.65,\n            \"tax_rate\": 13,\n            \"tax_deduction\": 339.69,\n            \"net\": 2142.66,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"ec0b3dbe67361134dc1a42294511d90676aa7c63\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000427\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff7\",\n            \"external_id\": \"000000000428\",\n            \"vat\": \"92428750F\",\n            \"date\": \"20181231\",\n            \"gross\": 1930,\n            \"national_insurance_rate\": 1,\n            \"national_insurance_deduction\": 19.3,\n            \"tax_rate\": 16,\n            \"tax_deduction\": 308.8,\n            \"net\": 1601.9,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"415601c0b16b24b3c367b73f1edd94e37f6240aa\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000000428\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff8\",\n            \"external_id\": \"000000001468\",\n            \"vat\": \"23749703H\",\n            \"date\": \"20181231\",\n            \"gross\": 1863,\n            \"national_insurance_rate\": 3,\n            \"national_insurance_deduction\": 55.89,\n            \"tax_rate\": 19,\n            \"tax_deduction\": 353.97,\n            \"net\": 1453.14,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"5c16a5843eead10c3ce6dd15929594ad266ea995\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000001468\"\n                }\n            }\n        },\n        {\n            \"_id\": \"5e0673be6e442d2c871e2ff9\",\n            \"external_id\": \"000000001478\",\n            \"vat\": \"74920733G\",\n            \"date\": \"20181231\",\n            \"gross\": 1763,\n            \"national_insurance_rate\": 1,\n            \"national_insurance_deduction\": 17.63,\n            \"tax_rate\": 12.1,\n            \"tax_deduction\": 334.97,\n            \"net\": 1410.4,\n            \"_updated\": \"20191227\",\n            \"_created\": \"20191227\",\n            \"_etag\": \"1e01a4a3f323d2387db0aa3a1c475de956e7ea30\",\n            \"_links\": {\n                \"self\": {\n                    \"title\": \"Payslip\",\n                    \"href\": \"payslips/000000001478\"\n                }\n            }\n        }\n    ],\n    \"_links\": {\n        \"parent\": {\n            \"title\": \"home\",\n            \"href\": \"/\"\n        },\n        \"self\": {\n            \"title\": \"payslips\",\n            \"href\": \"payslips\"\n        }\n    },\n    \"_meta\": {\n        \"page\": 1,\n        \"max_results\": 25,\n        \"total\": 10\n    }\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "TASK 2",
+			"item": [
+				{
+					"name": "solution 1",
+					"item": [
+						{
+							"name": "/api/v1/payslips/<external_id>",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fc745fe4-82bd-47ca-85f2-5de6928375fb",
+										"exec": [
+											"pm.environment.set(\"payslip_id\", pm.response.json()._id);",
+											"pm.environment.set(\"_etag\", pm.response.json()._etag);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/payslips/000000001478",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"payslips",
+										"000000001478"
+									]
+								},
+								"description": "Get one payslip by external_id (this is the 'id' from the file 'payslips.201812.txt')"
+							},
+							"response": [
+								{
+									"name": "task 2 - original doc",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/v1/payslips/000000001478",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"payslips",
+												"000000001478"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "527"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=1,must-revalidate"
+										},
+										{
+											"key": "ETag",
+											"value": "\"4d325cf5528847e75be1da999f036318f14b47c8\""
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 27 Dec 2019 21:42:11 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Server",
+											"value": "Eve/0.9 Werkzeug/0.15.2 Python/3.7.4"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 27 Dec 2019 21:43:03 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"5e067ab3d7a422ea32820d64\",\n    \"external_id\": \"000000001478\",\n    \"vat\": \"74920733G\",\n    \"date\": \"20181231\",\n    \"gross\": 1763,\n    \"national_insurance_rate\": 1,\n    \"national_insurance_deduction\": 17.63,\n    \"tax_rate\": 19,\n    \"tax_deduction\": 334.97,\n    \"net\": 1410.4,\n    \"_updated\": \"20191227\",\n    \"_created\": \"20191227\",\n    \"_etag\": \"4d325cf5528847e75be1da999f036318f14b47c8\",\n    \"_links\": {\n        \"self\": {\n            \"title\": \"Payslip\",\n            \"href\": \"payslips/000000001478\"\n        },\n        \"parent\": {\n            \"title\": \"home\",\n            \"href\": \"/\"\n        },\n        \"collection\": {\n            \"title\": \"payslips\",\n            \"href\": \"payslips\"\n        }\n    }\n}"
+								},
+								{
+									"name": "sample",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/v1/payslips/000000001478",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"payslips",
+												"000000001478"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "527"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=1,must-revalidate"
+										},
+										{
+											"key": "ETag",
+											"value": "\"511a9a2f55bac368febdf67d337b17788980fc99\""
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 27 Dec 2019 21:12:30 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Server",
+											"value": "Eve/0.9 Werkzeug/0.15.2 Python/3.7.4"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 27 Dec 2019 21:15:40 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"5e0673be6e442d2c871e2ff9\",\n    \"external_id\": \"000000001478\",\n    \"vat\": \"74920733G\",\n    \"date\": \"20181231\",\n    \"gross\": 1763,\n    \"national_insurance_rate\": 1,\n    \"national_insurance_deduction\": 17.63,\n    \"tax_rate\": 19,\n    \"tax_deduction\": 334.97,\n    \"net\": 1410.4,\n    \"_updated\": \"20191227\",\n    \"_created\": \"20191227\",\n    \"_etag\": \"511a9a2f55bac368febdf67d337b17788980fc99\",\n    \"_links\": {\n        \"self\": {\n            \"title\": \"Payslip\",\n            \"href\": \"payslips/000000001478\"\n        },\n        \"parent\": {\n            \"title\": \"home\",\n            \"href\": \"/\"\n        },\n        \"collection\": {\n            \"title\": \"payslips\",\n            \"href\": \"payslips\"\n        }\n    }\n}"
+								},
+								{
+									"name": "task 2 - patched doc (tax_rate changed to '10.0')",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/v1/payslips/000000001478",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"payslips",
+												"000000001478"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "525"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=1,must-revalidate"
+										},
+										{
+											"key": "ETag",
+											"value": "\"3b618c96f7e39fab97ae3004d624c6474c6ed46e\""
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 27 Dec 2019 21:43:39 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Server",
+											"value": "Eve/0.9 Werkzeug/0.15.2 Python/3.7.4"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 27 Dec 2019 21:43:43 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"5e067ab3d7a422ea32820d64\",\n    \"external_id\": \"000000001478\",\n    \"vat\": \"74920733G\",\n    \"date\": \"20181231\",\n    \"gross\": 1763,\n    \"national_insurance_rate\": 1,\n    \"national_insurance_deduction\": 17.63,\n    \"tax_rate\": 10,\n    \"tax_deduction\": 176.3,\n    \"net\": 1569.07,\n    \"_updated\": \"20191227\",\n    \"_created\": \"20191227\",\n    \"_etag\": \"3b618c96f7e39fab97ae3004d624c6474c6ed46e\",\n    \"_links\": {\n        \"self\": {\n            \"title\": \"Payslip\",\n            \"href\": \"payslips/000000001478\"\n        },\n        \"parent\": {\n            \"title\": \"home\",\n            \"href\": \"/\"\n        },\n        \"collection\": {\n            \"title\": \"payslips\",\n            \"href\": \"payslips\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/v1/payslips/<_id>",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "If-Match",
+										"type": "text",
+										"value": "{{_etag}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"tax_rate\": 10.0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/v1/payslips/{{payslip_id}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"payslips",
+										"{{payslip_id}}"
+									]
+								},
+								"description": "Replace a payslip by its '_id'"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "solution 2",
+					"item": [
+						{
+							"name": "/api/v1/payslips/<external_id>",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fc745fe4-82bd-47ca-85f2-5de6928375fb",
+										"exec": [
+											"pm.environment.set(\"payslip_id\", pm.response.json()._id);",
+											"pm.environment.set(\"_etag\", pm.response.json()._etag);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/payslips/000000001478",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"payslips",
+										"000000001478"
+									]
+								},
+								"description": "Get one payslip by external_id (this is the 'id' from the file 'payslips.201812.txt')"
+							},
+							"response": [
+								{
+									"name": "sample",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/v1/payslips/000000001478",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"payslips",
+												"000000001478"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "527"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=1,must-revalidate"
+										},
+										{
+											"key": "ETag",
+											"value": "\"511a9a2f55bac368febdf67d337b17788980fc99\""
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 27 Dec 2019 21:12:30 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Server",
+											"value": "Eve/0.9 Werkzeug/0.15.2 Python/3.7.4"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 27 Dec 2019 21:15:40 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"5e0673be6e442d2c871e2ff9\",\n    \"external_id\": \"000000001478\",\n    \"vat\": \"74920733G\",\n    \"date\": \"20181231\",\n    \"gross\": 1763,\n    \"national_insurance_rate\": 1,\n    \"national_insurance_deduction\": 17.63,\n    \"tax_rate\": 19,\n    \"tax_deduction\": 334.97,\n    \"net\": 1410.4,\n    \"_updated\": \"20191227\",\n    \"_created\": \"20191227\",\n    \"_etag\": \"511a9a2f55bac368febdf67d337b17788980fc99\",\n    \"_links\": {\n        \"self\": {\n            \"title\": \"Payslip\",\n            \"href\": \"payslips/000000001478\"\n        },\n        \"parent\": {\n            \"title\": \"home\",\n            \"href\": \"/\"\n        },\n        \"collection\": {\n            \"title\": \"payslips\",\n            \"href\": \"payslips\"\n        }\n    }\n}"
+								},
+								{
+									"name": "task 2 - patched doc (tax_rate changed to '10.0')",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/v1/payslips/000000001478",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"payslips",
+												"000000001478"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "525"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=1,must-revalidate"
+										},
+										{
+											"key": "ETag",
+											"value": "\"3b618c96f7e39fab97ae3004d624c6474c6ed46e\""
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 27 Dec 2019 21:43:39 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Server",
+											"value": "Eve/0.9 Werkzeug/0.15.2 Python/3.7.4"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 27 Dec 2019 21:43:43 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"5e067ab3d7a422ea32820d64\",\n    \"external_id\": \"000000001478\",\n    \"vat\": \"74920733G\",\n    \"date\": \"20181231\",\n    \"gross\": 1763,\n    \"national_insurance_rate\": 1,\n    \"national_insurance_deduction\": 17.63,\n    \"tax_rate\": 10,\n    \"tax_deduction\": 176.3,\n    \"net\": 1569.07,\n    \"_updated\": \"20191227\",\n    \"_created\": \"20191227\",\n    \"_etag\": \"3b618c96f7e39fab97ae3004d624c6474c6ed46e\",\n    \"_links\": {\n        \"self\": {\n            \"title\": \"Payslip\",\n            \"href\": \"payslips/000000001478\"\n        },\n        \"parent\": {\n            \"title\": \"home\",\n            \"href\": \"/\"\n        },\n        \"collection\": {\n            \"title\": \"payslips\",\n            \"href\": \"payslips\"\n        }\n    }\n}"
+								},
+								{
+									"name": "task 2 - original doc",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/v1/payslips/000000001478",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"payslips",
+												"000000001478"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "527"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=1,must-revalidate"
+										},
+										{
+											"key": "ETag",
+											"value": "\"4d325cf5528847e75be1da999f036318f14b47c8\""
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 27 Dec 2019 21:42:11 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Server",
+											"value": "Eve/0.9 Werkzeug/0.15.2 Python/3.7.4"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 27 Dec 2019 21:43:03 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"5e067ab3d7a422ea32820d64\",\n    \"external_id\": \"000000001478\",\n    \"vat\": \"74920733G\",\n    \"date\": \"20181231\",\n    \"gross\": 1763,\n    \"national_insurance_rate\": 1,\n    \"national_insurance_deduction\": 17.63,\n    \"tax_rate\": 19,\n    \"tax_deduction\": 334.97,\n    \"net\": 1410.4,\n    \"_updated\": \"20191227\",\n    \"_created\": \"20191227\",\n    \"_etag\": \"4d325cf5528847e75be1da999f036318f14b47c8\",\n    \"_links\": {\n        \"self\": {\n            \"title\": \"Payslip\",\n            \"href\": \"payslips/000000001478\"\n        },\n        \"parent\": {\n            \"title\": \"home\",\n            \"href\": \"/\"\n        },\n        \"collection\": {\n            \"title\": \"payslips\",\n            \"href\": \"payslips\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/v1/payslips/<_id>",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "If-Match",
+										"value": "{{_etag}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"tax_rate\": \"10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/v1/payslips/{{payslip_id}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"payslips",
+										"{{payslip_id}}"
+									]
+								},
+								"description": "Update a payslip by its '_id'"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "solution 3",
+					"item": [
+						{
+							"name": "/api/v1/payslips/update_all",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"tax_rate\": 10.0,\n    \"year\": 2018,\n    \"month\": 12\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/v1/payslips/update_all",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"payslips",
+										"update_all"
+									]
+								},
+								"description": "Updates all payslips under the same year and month, with a new tax rate"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "OTHER ENDPOINTS",
+			"item": [
+				{
+					"name": "/api/v1/payslips",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"external_id\": \"000000001479\",\n    \"vat\": \"74920733G\",\n    \"date\": \"20181231\",\n    \"gross\": 1763.0,\n    \"national_insurance_rate\": 1.0,\n    \"national_insurance_deduction\": 17.63,\n    \"tax_rate\": 19.0,\n    \"tax_deduction\": 334.97,\n    \"net\": 1410.4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/payslips/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payslips",
+								""
+							]
+						},
+						"description": "Create a new payslip"
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/payslips",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/v1/payslips",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payslips"
+							]
+						},
+						"description": "Delete all payslips"
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fc745fe4-82bd-47ca-85f2-5de6928375fb",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/v1/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								""
+							]
+						},
+						"description": "Get all endpoints"
+					},
+					"response": []
+				},
+				{
+					"name": "/health",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fc745fe4-82bd-47ca-85f2-5de6928375fb",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/health",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"health"
+							]
+						},
+						"description": "Check if Flask-Python app is running"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
